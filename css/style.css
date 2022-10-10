@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --RED: hsl(0, 78%, 62%);
+    --CYAN: hsl(180, 62%, 55%);
+    --ORANGE: hsl(34, 97%, 64%);
+    --BLUE: hsl(212, 86%, 64%);
+    --DARK-BLUE: hsl(234, 12%, 34%);
+    --GRAYISH-BLUE: hsl(229, 6%, 66%);
+    --VERY-LIGHT-GRAY: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: poppins;
+    font-size: 15px;
+    background-color: var(--VERY-LIGHT-GRAY);
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main p{
+    text-align: center;
+    color: var(--GRAYISH-BLUE);
+}
+
+.thin_heading{
+    font-weight: 200;
+    font-size: 30px;
+    color: var(--DARK-BLUE);
+}
+
+.thick_heading{
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--DARK-BLUE);
+}
+
+.card{
+    /* border: 1px solid black; */
+    border-radius: 7px;
+    margin: 20px 0;
+    padding: 30px;
+    background-color: white;
+    /* position: relative; */
+}
+
+.card .card_cyan:before{
+    width: 100%;
+    content: "cyan";
+    background-color: var(--CYAN);
+    position: absolut;
+    top:0;
+    left:0;
+}
